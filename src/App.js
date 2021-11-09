@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter,Routes,Route,Navigate } from 'react-router-dom';
+import Banner from './components/Banner';
+import Header from './components/Header';
+import MySkills from './components/MySkills';
+import MyWork from './components/MyWork';
 
-function App() {
+
+
+
+const App = () => {
+  const [isLight,setIsLight] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Header isLight={isLight} setIsLight={setIsLight}/>
+    <div className={`min-h-screen transition-all ${isLight?"bg-gray-100 text-gray-900":"bg-gray-900 text-white"}`}>
+<div className="px-3 mx-auto w-full lg:max-w-6xl pb-10 md:max-w-3xl">
+    <Routes>
+     
+   <Route  path="/Home" element={<Banner isLight={isLight}/>}/>
+   <Route path="/" element={<Navigate replace to="/Home"/>}/>
+   <Route  path="/Projects" element={<MyWork isLight={isLight}/>}/>
+   <Route  path="/Skills" element={<MySkills isLight={isLight}/>}/>
+   
+
+    </Routes>
+
+</div>
+</div>
+    </BrowserRouter>
+
   );
 }
-
+ 
 export default App;
