@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter,Routes,Route,Navigate } from 'react-router-dom';
+import About from './components/About';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import MySkills from './components/MySkills';
 import MyWork from './components/MyWork';
-
-
+import NotFound from './components/NotFound';
 
 
 const App = () => {
@@ -21,7 +21,10 @@ const App = () => {
    <Route path="/" element={<Navigate replace to="/Home"/>}/>
    <Route  path="/Projects" element={<MyWork isLight={isLight}/>}/>
    <Route  path="/Skills" element={<MySkills isLight={isLight}/>}/>
-   
+   <Route  path="/About" element={<About isLight={isLight}/>}/>
+   <Route  path="*" element={<NotFound/>}/>
+
+
 
     </Routes>
 
