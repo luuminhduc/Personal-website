@@ -10,6 +10,8 @@ import Insta from "../../assets/images/insta.png";
 import KeoBua from "../../assets/images/keo-bua-bao.png";
 import Student from "../../assets/images/student.png";
 import Sunshie from "../../assets/images/sunshine.png";
+import Movie from "../../assets/images/movieApp.png";
+import Memory from "../../assets/images/memory.png";
 
 const MyWork = ({ isLight }) => {
   const workArrs = [
@@ -83,11 +85,13 @@ const MyWork = ({ isLight }) => {
       name: "Movie app",
       skills: ["React", "Tailwind", "API", "Redux"],
       url: "https://movie-app-bay-nu.vercel.app/",
+      img: Movie,
     },
     {
       name: "Memory-game",
       skills: ["React", "Tailwind", "Redux"],
       url: "https://memory-game-sigma-blond.vercel.app/",
+      img: Memory,
     },
   ];
   return (
