@@ -4,7 +4,6 @@ import ECom from "../../assets/images/e-com.png";
 import EComDash from "../../assets/images/e-dashboard.png";
 import Todo from "../../assets/images/todo.png";
 import Calculator from "../../assets/images/calculator.png";
-import Dota from "../../assets/images/dota.png";
 import Gallery from "../../assets/images/gallery.png";
 import Insta from "../../assets/images/insta.png";
 import KeoBua from "../../assets/images/keo-bua-bao.png";
@@ -62,12 +61,6 @@ const MyWork = ({ isLight }) => {
       skills: ["React", "Tailwind", "Firebase", "Redux"],
       url: "https://student-management-with-auth.vercel.app/",
       img: Student,
-    },
-    {
-      name: "Dota app",
-      skills: ["React", "Tailwind", "API", "Redux"],
-      url: "https://dota-info-app.vercel.ap",
-      img: Dota,
     },
     {
       name: "Sunshine website",
