@@ -3,14 +3,14 @@ import React from "react";
 const MySkills = ({ isLight }) => {
 	const skillArr = [
 		"React",
-		"Vanila js",
+		"Vanila javascript",
 		"Sass",
 		"Firebase",
 		"Tailwindcss",
 		"Git",
 		"Node-js",
 		"ES6",
-		"REST",
+		"REST API",
 		"CSS",
 		"Bootstrap",
 		"JSON",

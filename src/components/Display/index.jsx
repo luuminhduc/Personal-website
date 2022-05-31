@@ -7,13 +7,27 @@ const Display = ({ isLight }) => {
 	const arr = [
 		{
 			name: "Fullstack E-commerce app (admin)",
-			skills: ["React", "Material-UI", "Node-js", "Mongo-db", "Redux-toolkit"],
+			skills: [
+				"React",
+				"Material-UI",
+				"Node-js",
+				"Express",
+				"Mongo-db",
+				"Redux-toolkit",
+			],
 			url: "https://my-ecommerce-mui-style.vercel.app/home",
 			img: MuiEDash,
 		},
 		{
 			name: "Fullstack E-commerce app (user)",
-			skills: ["React", "Material-UI", "Node-js", "Mongo-db", "Redux-toolkit"],
+			skills: [
+				"React",
+				"Material-UI",
+				"Node-js",
+				"Express",
+				"Mongo-db",
+				"Redux-toolkit",
+			],
 			url: "https://e-commerce-client-site.vercel.app/",
 			img: MuiClient,
 		},

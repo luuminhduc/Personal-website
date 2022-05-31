@@ -7,7 +7,10 @@ const Banner = ({ isLight }) => {
 			name: "Github",
 			link: "https://github.com/luuminhduc",
 		},
-
+		{
+			name: "Gitlab",
+			link: "https://gitlab.com/duc123",
+		},
 		{
 			name: "Email",
 			text: "luuminhduc00@gmail.com",

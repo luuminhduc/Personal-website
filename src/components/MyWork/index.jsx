@@ -7,12 +7,12 @@ import Calculator from "../../assets/images/calculator.png";
 import Gallery from "../../assets/images/gallery.png";
 import Insta from "../../assets/images/insta.png";
 import KeoBua from "../../assets/images/keo-bua-bao.png";
-import Student from "../../assets/images/student.png";
 import Sunshie from "../../assets/images/sunshine.png";
 import Movie from "../../assets/images/movieApp.png";
 import Memory from "../../assets/images/memory.png";
 import MuiEDash from "../../assets/images/muiDashboard.png";
 import MuiClient from "../../assets/images/muiClient.png";
+import Survey from "../../assets/images/survey.png";
 
 const MyWork = ({ isLight }) => {
 	useEffect(() => {
@@ -22,22 +22,29 @@ const MyWork = ({ isLight }) => {
 	const workArrs = [
 		{
 			name: "Fullstack E-commerce app (admin)",
-			skills: ["React", "Material-UI", "Node-js", "Mongo-db", "Redux-toolkit"],
+			skills: [
+				"React",
+				"Material-UI",
+				"Node-js",
+				"Express",
+				"Mongo-db",
+				"Redux-toolkit",
+			],
 			url: "https://my-ecommerce-mui-style.vercel.app/home",
 			img: MuiEDash,
 		},
 		{
 			name: "Fullstack E-commerce app (user)",
-			skills: ["React", "Material-UI", "Node-js", "Mongo-db", "Redux-toolkit"],
+			skills: [
+				"React",
+				"Material-UI",
+				"Node-js",
+				"Express",
+				"Mongo-db",
+				"Redux-toolkit",
+			],
 			url: "https://e-commerce-client-site.vercel.app/",
 			img: MuiClient,
-		},
-		{
-			name: "Bat Dong San",
-
-			skills: ["React", "Tailwind", "Firebase", "Redux"],
-			url: "https://thue-phong.vercel.app",
-			img: Bds,
 		},
 		{
 			name: "Instagram-clone",
@@ -45,6 +52,28 @@ const MyWork = ({ isLight }) => {
 			url: "https://instagram-clone-gilt-nine.vercel.app/",
 			img: Insta,
 		},
+		{
+			name: "Survey app",
+			skills: [
+				"React",
+				"Tailwind",
+				"Node-js",
+				"Express",
+				"Mongo-db",
+				"Redux-toolkit",
+			],
+			url: "https://survey-app-brown.vercel.app/",
+			img: Survey,
+		},
+
+		{
+			name: "Bat Dong San",
+
+			skills: ["React", "Tailwind", "Firebase", "Redux"],
+			url: "https://thue-phong.vercel.app",
+			img: Bds,
+		},
+
 		{
 			name: "Basic E-commerce",
 			skills: ["React", "Tailwind", "Firebase", "Redux"],
@@ -56,6 +85,12 @@ const MyWork = ({ isLight }) => {
 			skills: ["React", "Tailwind", "Firebase", "Redux"],
 			url: "https://11st-dashboard.vercel.app/home",
 			img: EComDash,
+		},
+		{
+			name: "Todo firebase app",
+			skills: ["React", "Firebase", "Redux"],
+			url: "https://todo-app-with-auth.vercel.app/",
+			img: Todo,
 		},
 		{
 			name: "Calculator",
